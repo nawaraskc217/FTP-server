@@ -80,4 +80,54 @@ From another PC on the same network:
 2. In the address bar, type: ``ftp://192.168.0.10:21 `` or 
     1. add network a network location
 
+3. Press Enter
+4. Log in using your Windows username/password if prompted
+
+---
+
+### ✅ Optional: Map FTP as Network Drive
+
+1. Right-click **This PC** > **Map network drive**
+2. In Folder field, enter:
+
+
+
+
+# Extra IDEA
+
+3. Check ✅ **Reconnect at logon**
+4. Click **Finish**
+
+---
+
+## 🧪 Example IP Setup
+
+| Device       | IP Address      | Connection         |
+|--------------|------------------|---------------------|
+| MGhost       | 192.168.0.10     | Main Router (LAN)   |
+| Nawaras-PC   | 192.168.0.11     | Secondary Router LAN (bridged) |
+| Router       | 192.168.0.1      | Gateway             |
+
+---
+
+## 🚫 Troubleshooting
+
+- Make sure both PCs are on the **same subnet** (e.g., `192.168.0.x`)
+- Check that **port 21** is open in the firewall
+- If you can't connect, try disabling the Windows firewall temporarily (for testing only)
+
+---
+
+## 🌐 Want FTP Access from the Internet?
+
+You'll need to:
+- Set a **static IP** for the FTP host
+- Configure **port forwarding** on your router
+- Use a **dynamic DNS** service (optional)
+
+Let me know if you want this setup too.
+
+---
+
+### 📁 You're now ready to transfer files over FTP!
 
